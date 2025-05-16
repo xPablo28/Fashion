@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <title>Style Up Outfit Selector</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#">Style Up Outfit<span>Selector</span>.</a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <span><i class="ri-menu-line"></i></span>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#welcome">Home</a></li>
+        <li><a href="#package">Package</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav__btns">
+        <a href="./index.html"><button>Explore</button></a>
+        <a href="#"><button>Login</button></a>
+        <a href="#"><button>Signup</button></a>
+      </div>
+    </nav>
+    
+    <header id="welcome" class="header__container">
+      <div class="header__image">
+        <div class="header__image__card header__image__card-1">
+          <span><i class="ri-key-line"></i></span>
+          Image Selection
+        </div>
+        <div class="header__image__card header__image__card-2">
+          <span><i class="ri-passport-line"></i></span>
+           Occassional Events 
+        </div>
+        <div class="header__image__card header__image__card-3">
+          <span><i class="ri-map-2-line"></i></span>
+          Local Events
+        </div>
+        <div class="header__image__card header__image__card-4">
+          <span><i class="ri-guide-line"></i></span>
+          Tour Guide
+        </div>
+        <img src="../images/header.png" alt="header" />
+      </div>
+    
+      <div class="header__content">
+        <h1>LET'S GO!<br />THE <span>OUTFIT SELECTOR</span> IS HERE FOR YOU</h1>
+        <p>
+          Thinking of an Outfit to where to a Party or 
+          Occassion or Wedding, the ai is here to help 
+          you out today. Just sit back as it performs 
+          it's magic for you today.
+        </p>
+        <form action="/">
+          <div class="input__row">
+            <div class="input__group">
+              <h5>Destination</h5>
+              <div>
+                <span><i class="ri-map-pin-line"></i></span>
+                <input type="text" placeholder="Weddding event" />
+              </div>
+            </div>
+            <div class="input__group">
+              <h5>Date</h5>
+              <div>
+                <span><i class="ri-calendar-2-line"></i></span>
+                <input type="text" placeholder="12/20/2024" />
+              </div>
+            </div>
+          </div>
+          <button type="submit">Search</button>
+        </form>
+    </header>
+
+    <!--Package section-->
+    <section id="package" class="containerss ">
+        <h2 class="section-subheading">Our Packages</h2>
+        <p>Explore our exclusive packages tailored for various events and needs.</p>
+        <div class="packages">
+          <div class="package">
+            <h3 class="package_title">Wedding Package</h3>
+            <img src="../images/wedding.png" alt="Wedding Package">
+            <p>Perfect outfits for your big day.</p>
+          </div>
+          <div class="package">
+            <h3 class="package_title">Casual Outings</h3>
+            <img src="../images/casual.png" alt="Casual Outings">
+            <p>Stylish outfits for everyday adventures.</p>
+          </div>
+          <div class="package">
+            <h3 class="package_title">Corporate Events</h3>
+            <img src="../images/cooperative.png" alt="Corporate Events">
+            <p>Professional attire for your business needs.</p>
+          </div>
+        </div>
+      </section>
+      
+      <!--About Us-->
+      <section id="about" class="section">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>About Us</h2>
+            <p>
+              At StyleUp Outfit Selector, we aim to revolutionize how you choose outfits for
+              any occasion. Whether it’s a wedding, casual outing, or corporate event,
+              our AI-driven platform ensures you step out in style.
+            </p>
+            <button class="sign__in">Get Started</button>
+          </div>
+          <div class="about-images">
+            <img src="../images/image1.jpg" alt="Image 1">
+            <img src="../images/image2.jpg" alt="Image 2">
+            <img src="../images/image 3.jpg" alt="Image 3">
+            <img src="../images/image 4.jpg" alt="Image 4">
+          </div>
+        </div>
+      </section>
+      
+  
+      <section id="contact">
+        <div class="containers">
+            <h2 class="text-center">Contact Us</h2>
+            <p class="text-center left rights">
+                We’d love to hear from you! Reach out for any inquiries or support.
+            </p>
+            <div class="contact">
+                <form action="/contact" method="POST" class="contact_form">
+                    <h1>Write us a message</h1>
+                    <input type="text" placeholder="Enter your name" required />
+                    <input type="email" placeholder="Enter your email" required />
+                    <input type="text" placeholder="Subject" required />
+                    <text area rows="5" required>Enter your message here</textarea>
+                    <button type="submit">Send message</button>
+                </form>
+                <div class="contact_details">
+                    <p class="text">
+                        If you want to reach out to us for measurements and 
+                        get a cloth sowed, you can contact:
+                    </p>
+                    <div class="details">
+                        <div class="detail">
+                            <div class="detail_icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="detail_content">
+                                <h3>Phone</h3>
+                                <p>+233 24 4203 870</p>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <div class="detail_icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="detail_content">
+                                <h3>Email</h3>
+                                <p>teamwork@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <div class="detail_icon">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <div class="detail_content">
+                                <h3>Address</h3>
+                                <p>Accra Technical University</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer>
+      <div class="container">
+          <div class="footer_content">
+              <div class="footer_details">
+                  <div class="footer_logo">
+                      <h2><p class="logo">Style Up Outfit Selector</p></h2>
+                  </div>
+                  <p class="footer_text">
+                      Incase you need any confirmation or any type of enquires
+                      you can just feel free to visit any of our sites or social media
+                      pages. Also feel free to contact us at your home and we will attend 
+                      to you. Always remember that we are a call away.
+                  </p>
+                  <div class="footer_newsletter">
+                      <form action="#" class="footer_newsletter-form">
+                          <input type="email" placeholder="Submit Email" required>
+                          <button type="submit" class="submit-btn">Subscribe</button>
+                      </form>
+                  </div>
+              </div>
+              <div class="footer_menu">
+                  <h3 class="footer_menu-title">Quick Access</h3>
+                  <ul class="footer_menu-list">
+                      <li><a href="#welcome">Home</a></li>
+                      <li><a href="#package">Packages</a></li>
+                      <li><a href="#about">About Us</a></li>
+                      <li><a href="#contact">Contact Us</a></li>
+                  </ul>
+              </div>
+              <div class="footer_menu">
+                  <h3 class="footer_menu-title">Packages</h3>
+                  <ul class="footer_menu-list">
+                      <li><a href="#wedding">Wedding Occasion</a></li>
+                      <li><a href="#casual">Casual Occasion</a></li>
+                      <li><a href="#outings">Casual Outings</a></li>
+                      <li><a href="#corporate">Corporate Events</a></li>
+                  </ul>
+              </div>
+              <div class="footer_menu">
+                  <h3 class="footer_menu-title">Social Media</h3>
+                  <ul class="footer_menu-list">
+                      <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                      <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+                      <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                      <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="footer_button">
+              <div class="footer_button-icons">
+                  <p>Follow Us</p>
+                  <a href="https://www.facebook.com" target="_blank" class="facebook">
+                      <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="https://www.twitter.com" target="_blank" class="twitter">
+                      <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="https://www.instagram.com" target="_blank" class="instagram">
+                      <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="https://www.linkedin.com" target="_blank" class="linkedin">
+                      <i class="fab fa-linkedin"></i>
+                  </a>
+              </div>
+              <p>&copy; 2024 Style Up. All rights reserved</p>
+          </div>
+      </div>
+  </footer>
+  
+  
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <script src="../js/scripts.js"></script>
+
+  </body>
+</html>

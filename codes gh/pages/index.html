@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Fashion</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>AI-Powered Fashion</h1>
+        <nav>
+            <ul>
+                <li><a href="./landing page.html">Home</a></li>
+                <li><a href="#" onclick="showSection('upload-section')">Style Analysis</a></li>
+                <li><a href="#" onclick="showSection('event-style-up')">Event Style-Up</a></li>
+                <li><a href="#" onclick="toggleDarkMode()">Dark Mode</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section id="hero-section">
+            <div class="hero-content">
+                <h2>Discover Your Unique Style</h2>
+                <p>Transform your wardrobe with AI-powered insights into fashion and style.</p>
+                <button onclick="showSection('upload-section')">Get Started</button>
+            </div>
+        </section>
+
+        <!-- Home Section 
+        <section id="home-section">
+            <h2>Welcome to AI-Powered Fashion</h2>
+            <p>Blend technology and trends to revolutionize your look.</p>
+            <div class="info-cards">
+                <div class="info-card">
+                    <h3>About Us</h3>
+                    <p>Your personalized style assistant, redefining how you experience fashion.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Our Mission</h3>
+                    <p>Making style accessible, sustainable, and tailored for everyone.</p>
+                </div>
+            </div>
+        </section>-->
+
+        <!-- Style Analysis Section -->
+        <section id="upload-section" style="display: none;">
+            <h2>Style Analysis</h2>
+            <p>Upload an outfit and get expert analysis and tailored recommendations.</p>
+            <input type="file" id="upload" accept="image/*" multiple>
+            <button id="analyze-btn">Analyze</button>
+            <div id="image-grid"></div>
+            <div id="suggestions"></div>
+        </section>
+
+        <!-- Event Style-Up Section -->
+        <section id="event-style-up" style="display: none;">
+            <h2>Event Style-Up</h2>
+            <p>Provide event details, and receive customized style suggestions.</p>
+            <form>
+                <label for="eventType">Event Type:</label>
+                <select id="eventType">
+                    <option value="wedding">Wedding</option>
+                    <option value="party">Party</option>
+                    <option value="formal">Formal</option>
+                </select>
+                <label for="colorPreference">Preferred Color:</label>
+                <input type="text" id="colorPreference" placeholder="e.g., Blue, Black">
+                <button type="button" id="generate-style">Get Recommendations</button>
+            </form>
+            <div id="style-suggestions"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer_content">
+                <div class="footer_details">
+                    <div class="footer_logo">
+                        <h2><p class="logo">Style Up Outfit Selector</p></h2>
+                    </div>
+                    <p class="footer_text">
+                        Incase you need any confirmation or any type of enquires
+                        you can just feel free to visit any of our sites or social media
+                        pages. Also feel free to contact us at your home and we will attend 
+                        to you. Always remember that we are a call away.
+                    </p>
+                    <div class="footer_newsletter">
+                        <form action="#" class="footer_newsletter-form">
+                            <input type="email" placeholder="Submit Email" required>
+                            <button type="submit" class="submit-btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+               
+                <div class="footer_menu">
+                    <h3 class="footer_menu-title">Packages</h3>
+                    <ul class="footer_menu-list">
+                        <li><a href="#wedding">Wedding Occasion</a></li>
+                        <li><a href="#casual">Casual Occasion</a></li>
+                        <li><a href="#outings">Casual Outings</a></li>
+                        <li><a href="#corporate">Corporate Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer_menu">
+                    <h3 class="footer_menu-title">Social Media</h3>
+                    <ul class="footer_menu-list">
+                        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+                        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_button">
+                <div class="footer_button-icons">
+                    <p>Follow Us</p>
+                    <a href="https://www.facebook.com" target="_blank" class="facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" class="twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" class="linkedin">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <p>&copy; 2024 Style Up. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>
